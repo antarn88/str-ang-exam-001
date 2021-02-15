@@ -1,4 +1,7 @@
 <div class="row mt-5">
+  <div class="col-4 offset-4 mb-4">
+    <input type="text" class="form-control" placeholder="Search" (keyup)='onChangePhrase($event)'>
+  </div>
   <div class="col-12">
     <table class="table table-striped">
       <thead>
@@ -8,7 +11,7 @@
         <th>Address</th>
       </thead>
       <tbody>
-        <tr *ngFor="let hero of heroList">
+        <tr *ngFor="let hero of heroList | filter:phrase">
           <td>{{ hero.id }}</td>
           <td>{{ hero.name }}</td>
           <td>{{ hero.superPower }}</td>
