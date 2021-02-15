@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
 import { HeroesComponent } from './page/heroes/heroes.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
