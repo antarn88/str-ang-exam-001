@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'heroes',
     component: HeroesComponent
+  },
+  {
+    path: '**',
+    component: HomeComponent
   }
 ];
 
