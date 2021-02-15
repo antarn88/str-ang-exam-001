@@ -1,1 +1,20 @@
-<p>heroes works!</p>
+<div class="row mt-5">
+  <div class="col-12">
+    <table class="table table-striped">
+      <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>SuperPower</th>
+        <th>Address</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hero of heroList">
+          <td>{{ hero.id }}</td>
+          <td>{{ hero.name }}</td>
+          <td>{{ hero.superPower }}</td>
+          <td>{{ hero.address }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
