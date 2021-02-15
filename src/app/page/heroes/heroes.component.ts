@@ -10,6 +10,7 @@ import { HeroService } from 'src/app/service/hero.service';
 export class HeroesComponent implements OnInit {
 
   phrase: string = '';
+  sorterColumn: string = '';
 
   constructor(private heroService: HeroService) { }
 
@@ -22,4 +23,7 @@ export class HeroesComponent implements OnInit {
     this.phrase = (event.target as HTMLInputElement).value;
   }
 
+  onClickHeader(columnName: string): void {
+    this.sorterColumn = columnName;
+  }
 }
